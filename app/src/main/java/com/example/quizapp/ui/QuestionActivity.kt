@@ -124,10 +124,7 @@ class QuestionActivity : AppCompatActivity() , View.OnClickListener {
         for(option in options){
             option.setTextColor(Color.GRAY)
             option.typeface = Typeface.DEFAULT
-            option.background = ContextCompat.getDrawable(
-                this,
-                R.drawable.option_bg
-            )
+            option.background = ContextCompat.getDrawable(this, R.drawable.option_bg)
         }
     }
 
@@ -138,8 +135,7 @@ class QuestionActivity : AppCompatActivity() , View.OnClickListener {
 
         textView.setTextColor(Color.BLACK)
         textView.setTypeface(textView.typeface, Typeface.BOLD)
-        textView.background = ContextCompat.getDrawable(this,
-            R.drawable.select_border)
+        textView.background = ContextCompat.getDrawable(this, R.drawable.select_border)
     }
 
     override fun onClick(view: View?)
